@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo-mario {
+    width: 300px;
+}
+
+#image-mario-luigi {
+    height: 600px;
+}
+
+#container1 {
+    width: 40%
+}
+
+#container1 h1 {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#mario {
+    color: #C51111;
+}
+
+#luigi {
+    color: green;
+}
+
+#container1 h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#container1 p {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+#container-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#container-video-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%)
+}
+
+#button-contact-us {
+    height: 40px;
+    width: 200px;
+    background: #C51111;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#contact-us {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    position: fixed;
+    left: -320px;
+    transition: left 1s linear;
+    z-index: 4;
+}
+
+input {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline-color: chartreuse;
+}
+
+textarea {
+    height: 90px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline-color: chartreuse;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+#mask-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}

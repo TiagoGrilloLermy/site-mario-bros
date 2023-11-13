@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+    <title>Mario Bros.</title>
+</head>
+
+<body>
+    <main>
+
+        <section id="container-video">
+            <video src="./assets/video.mp4" autoplay muted loop></video>
+            <div id="container-video-mask"></div>
+        </section>
+
+        <section id="container1">
+            <img src="./assets/logo.png" alt="Logotipo do Mario Bros" id="logo-mario">
+            <h1>Encanadores <span id="mario">Mario</span> & <span id="luigi">Luigi</span></h1>
+            <h2>Resolvendo Seus Problemas Com Estilo!</h2>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos
+                ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a
+                vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="clickButton()" id="button-contact-us">Fale Conosco</button>
+        </section>
+
+        <section id="container2">
+            <img src="./assets/mario.png" alt="Mario e Luigi" id="image-mario-luigi">
+        </section>
+
+        <form id="contact-us" class="contact-us" action="https://formsubmit.co/tlermy@gmail.com" method="POST">
+            <input type="text" name="Nome" required placeholder="Nome">
+            <input type="tel" name="Telefone" required placeholder="Telefone">
+            <input type="email" name="E-mail" required placeholder="Email">
+            <textarea type="text" name="Dúvida" placeholder="Sua dúvida aqui"></textarea>
+            <button type="submit" onclick="sumirFormulario()" class="contact-us-button">Fale Conosco</button>
+        </form>
+
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/tiago-grillo-lermy/" target="_blank">Desenvolvidor por Tiago Grillo
+            Lermy</a>
+    </footer>
+
+    <div id="#mask-form" class=".mask-form"></div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
